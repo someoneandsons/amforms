@@ -76,6 +76,11 @@ class AmFormsVariable
     {
         return craft()->amForms_submissions->getCriteria($attributes);
     }
+    
+    public function getActiveSubmission($form)
+    {
+        return craft()->amForms_submissions->getActiveSubmission($form);
+    }
 
     /**
      * Get a submission by its ID.
